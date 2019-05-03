@@ -124,6 +124,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 												<th>City/State</th>
 												<th class="never">Email Address</th>
 												<th>Phone Number</th>
+												<th>City/State</th>
 												<th>Status</th>
 												<th>Video</th>
 												<th>Actions</th>
@@ -139,6 +140,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 												<td><?php echo $request["name"] ?></td>
 												<td class="never"><?php echo $request["email"] ?></td>
 												<td><?php echo $request["phonenumber"] ?></td>
+												<td><?php echo $request["location"] ?></td>
 												<td><?php echo $request["approval_status"] ?></td>
 												<td><?php echo $request["review_status"] ?></td>
 												<td nowrap></td>

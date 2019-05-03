@@ -84,7 +84,7 @@ var KTDatatablesAdvancedColumnRendering = function() {
                     },
                 },
                 {
-                    targets: 5,
+                    targets: 6,
                     render: function(data, type, full, meta) {
                         var status = {
                             1: { 'title': 'Approved', 'class': ' kt-badge--success' },
@@ -99,7 +99,7 @@ var KTDatatablesAdvancedColumnRendering = function() {
                     },
                 },
                 {
-                    targets: 6,
+                    targets: 7,
                     render: function(data, type, full, meta) {
                         var status = {
                             1: { 'title': 'Progs', 'state': 'danger' },
