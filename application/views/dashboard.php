@@ -291,7 +291,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
 						});
 						if (hasClass) {
 							// element has class `MyClass`
-							
+							var approvalBtn = element.querySelector("a#btn-approve");
+							if (approvalBtn !== null)
+							{
+								console.log("Btn Approved Seen ");
+							}
 							element.addEventListener('click', event => {
 								console.log("Approval Log clicked ")
 							});
