@@ -130,7 +130,7 @@ var KTDatatablesAdvancedColumnRendering = function() {
 }();
 
 jQuery(document).ready(function() {
-    var datatable = KTDatatablesAdvancedColumnRendering.init();
+    var dataTables = KTDatatablesAdvancedColumnRendering.init();
     var filterAllStatus = jQuery("#filter-all-status");
     filterAllStatus.on('click', function() {
         dataTables.columns(4).search("").draw();
