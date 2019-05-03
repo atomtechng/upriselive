@@ -55,7 +55,11 @@ class Request extends CI_Controller
                 ->set_content_type('application/json')
                 ->set_output(json_encode($result));
         }
-        $this->load->view('home');
+        else{
+            $this->output
+            ->set_content_type('application/json')
+            ->set_output(json_encode(array("status" => "unauthorized")));
+        }
 
     }
 
