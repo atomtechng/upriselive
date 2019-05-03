@@ -284,7 +284,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 								var classDiscovered  = classes.contains('dropdown-menu');
 							}
 							else 
-								classDiscovered = FALSE;
+								classDiscovered = false;
 							if(classDiscovered)
 							{
 								element = el;
