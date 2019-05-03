@@ -20,7 +20,7 @@
         <link rel="shortcut icon" href="<?php echo base_url().'public/images/favicons/favicon.png' ?>">
 
         <link href='https://fonts.googleapis.com/css?family=Rubik:400,700,700i' rel='stylesheet' type='text/css'>		
-        <link rel="stylesheet" type="text/css"  href="<?php echo base_url().'public/style.css' ?>" />
+        <link rel="stylesheet" type="text/css"  href="<?php echo base_url().'public/style.css?version=20190503' ?>" />
         <link rel="stylesheet" type="text/css"  href="<?php echo base_url(). 'public/mad.css' ?>"/>
 
         <!--[if lt IE 9]>
