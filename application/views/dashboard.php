@@ -279,11 +279,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
 					if (mutation.addedNodes && mutation.addedNodes.length > 0) {
 						// element added to DOM
 						var hasClass = [].some.call(mutation.addedNodes, function(el) {
-							return el.classList.contains('btn-approve')
+							return el.id === 'btn-approve'
 						});
 						if (hasClass) {
 							// element has class `MyClass`
 							console.log('element ".btn-approve" added');
+							
 						}
 					}
 				});
