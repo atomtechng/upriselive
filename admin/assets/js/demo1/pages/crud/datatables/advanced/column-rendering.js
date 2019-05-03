@@ -209,6 +209,20 @@ var KTDatatablesAdvancedColumnRendering = function() {
                     title: 'Artist',
                     render: function(data, type, full, meta) {
 
+
+                        var stateNo = KTUtil.getRandomInt(0, 7);
+                        var states = [
+                            'success',
+                            'brand',
+                            'danger',
+                            'accent',
+                            'warning',
+                            'metal',
+                            'primary',
+                            'info'
+                        ];
+                        var state = states[stateNo];
+
                         var gravataURL = get_gravatar(full[3], 100);
                         output = `
                                 <div class="kt-user-card-v2">
@@ -221,7 +235,6 @@ var KTDatatablesAdvancedColumnRendering = function() {
                                         <a href="#" class="kt-user-card-v2__email kt-link">` + full[3] + `</a>
                                     </div>
                                 </div>`;
-
                         return output;
                     },
                 },
