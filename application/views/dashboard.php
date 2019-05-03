@@ -122,7 +122,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 												<th>Record ID</th>
 												<th>Song Link</th>
 												<th>City/State</th>
-												<th>Email Address</th>
+												<th class="never">Email Address</th>
 												
 												<th>Status</th>
 												<th>Video</th>
@@ -136,7 +136,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 												<td><?php echo $request["id"] ?></td>
 												<td><?php echo $request["link"] ?></td>
 												<td><?php echo $request["name"] ?></td>
-												<td><?php echo $request["email"] ?></td>
+												<td class="never"><?php echo $request["email"] ?></td>
 												
 												<td><?php echo $request["approval_status"] ?></td>
 												<td><?php echo $request["review_status"] ?></td>
