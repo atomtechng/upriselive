@@ -18,29 +18,29 @@ class Home extends CI_Controller
         $this->load->view('home');
     }
 
-    public function request()
-    {
+    // public function request()
+    // {
           
-        $name = $this->input->post('name');
-        $email = $this->input->post('email');
-        $phonenumber = $this->input->post('phonenumber');
-        $link = $this->input->post('link');
+    //     $name = $this->input->post('name');
+    //     $email = $this->input->post('email');
+    //     $phonenumber = $this->input->post('phonenumber');
+    //     $link = $this->input->post('link');
 
-        $data = array("name" => $name,
-            "email" => $email,
-            "phonenumber" => $phonenumber,
-            "link" => $link,
-            "date_registered" => date("Y-m-d H:i:s"));
+    //     $data = array("name" => $name,
+    //         "email" => $email,
+    //         "phonenumber" => $phonenumber,
+    //         "link" => $link,
+    //         "date_registered" => date("Y-m-d H:i:s"));
 
-        $this->request_model->create($data);
+    //     $this->request_model->create($data);
 
-        $Subject ="Welcome to Upriselive!!!";
-        $alt_body ="You are about to experince a breakthrough in your career";
-        $message= "You are about to experince a breakthrough in your career";
-        $this->mail($email, "Upriselive", $name, $message, $Subject, $alt_body);
+    //     $Subject ="Welcome to Upriselive!!!";
+    //     $alt_body ="You are about to experince a breakthrough in your career";
+    //     $message= "You are about to experince a breakthrough in your career";
+    //     $this->mail($email, "Upriselive", $name, $message, $Subject, $alt_body);
 
-        redirect('thanks');
-    }
+    //     redirect('thanks');
+    // }
     public function thanks()
     {
         $this->load->view('thanks');
