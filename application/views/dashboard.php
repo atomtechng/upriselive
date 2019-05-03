@@ -293,13 +293,14 @@ defined('BASEPATH') or exit('No direct script access allowed');
 							{
 								approvalBtn.addEventListener('click', event => {
 									var id = approvalBtn.dataset.id;
-									fetch("<?php echo base_url('request/delete/') ?>" + id)
-									.then(function(response) {
-										return response.json();
-									})
-									.then(function(myJson) {
-										console.log(JSON.stringify(myJson));
-									});
+									fetch("<?php echo base_url('request/delete/') ?>" + id, {
+										method: 'delete'})
+										.then(function(response) {
+											return response.json();
+										})
+										.then(function(myJson) {
+											console.log(JSON.stringify(myJson));
+										});
 									console.log("Data of id: " + id + "was approved");
 
 								});
