@@ -224,7 +224,7 @@ var KTDatatablesAdvancedColumnRendering = function() {
                         var state = states[stateNo];
 
                         var gravataURL = get_gravatar(full[3], 100);
-                        output = `
+                        var output = `
                                 <div class="kt-user-card-v2">
                                     <div class="kt-user-card-v2__pic">
                                         <div class="kt-badge kt-badge--xl kt-badge--` + state + `"><span>` + full[2].substring(0, 1) + `</div>
