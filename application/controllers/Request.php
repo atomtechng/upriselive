@@ -38,9 +38,7 @@ class Request extends CI_Controller
     public function delete($id=-1)
     {
         
-        $request_method = $this->input->server('REQUEST_METHOD');
-        var_dump($request_method);
-        exit;
+        $request_method = strtolower($this->input->server('REQUEST_METHOD'));
         $result = array();
         if($request_method == "delete")
         {
