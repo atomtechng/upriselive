@@ -73,9 +73,9 @@ var KTDatatablesAdvancedColumnRendering = function() {
                               <i class="la la-ellipsis-h"></i>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item" href="#" data-id="` + full[0]+ `"><i class="la la-edit"></i> Approve</a>
-                                <a class="dropdown-item" href="#" data-id="` + full[0]+ `"><i class="la la-leaf"></i> Review</a>
-                                <a class="dropdown-item" href="#" data-id="` + full[0]+ `"><i class="la la-print"></i> Trash</a>
+                                <a class="dropdown-item btn-approve" id="btn-approve" href="#" data-id="` + full[0] + `"><i class="la la-edit"></i> Approve</a>
+                                <a class="dropdown-item btn-review" id="btn-review" href="#" data-id="` + full[0] + `"><i class="la la-leaf"></i> Review</a>
+                                <a class="dropdown-item btn-trash" id="btn-trash" href="#" data-id="` + full[0] + `"><i class="la la-print"></i> Trash</a>
                             </div>
                         </span>
                         <a href="#" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="View">
