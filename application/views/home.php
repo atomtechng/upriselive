@@ -139,7 +139,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                         <p><input type="text" placeholder="Your name" name="name" required minlength="2" maxlength="300"></p>
                                         <p><input type="email" placeholder="Your email address" name="email" required minlength="6" maxlength="300"></p>
                                         <p><input type="tel" placeholder="Your phone number" name="phonenumber" required minlength="10" maxlength="50"></p>
-                                        <p><input type="url" placeholder="Your song link ( i.e on soundcloud, naijaloaded, tooxclsuive, etc )" name="link" required minlength="5" maxlength="6"></p>
+                                        <p><input type="url" placeholder="Your song link ( i.e on soundcloud, naijaloaded, tooxclsuive, etc )" name="link" required minlength="5"></p>
                                         <p class="contact-submit-holder"><input type="submit" value="SUBMIT"></p>
                                     <?php echo form_close();?>
                                 </div>
