@@ -16,6 +16,8 @@ class Request_model extends CI_Model
         
         // Select record
         $this->db->select('*');
+        $this->db->order_by('date_registered', 'DESC');
+        $this->db->limit(100); 
         $q = $this->db->get(TABLE_REQUESTS);
         $response = $q->result_array();
     
