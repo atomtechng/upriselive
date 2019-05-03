@@ -122,6 +122,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 												<th>Record ID</th>
 												<th>Song Link</th>
 												<th>City/State</th>
+												<th>Email Address</th>
 												<th>Phone Number</th>
 												<th>Status</th>
 												<th>Video</th>
