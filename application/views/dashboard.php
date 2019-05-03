@@ -295,15 +295,17 @@ defined('BASEPATH') or exit('No direct script access allowed');
 							if (approvalBtn !== null)
 							{
 								approvalBtn.addEventListener('click', event => {
-								console.log("Approval Btn clicked ")
+									var id = approvalBtn.dataset.id;
+									console.log("Data of id: " + id + "was approved");
 								});
 							}
-							
+
 							var reviewBtn = element.querySelector("a#btn-review");
 							if (reviewBtn !== null)
 							{
 								reviewBtn.addEventListener('click', event => {
-								console.log("Review Btn clicked ")
+									var id = reviewBtn.dataset.id;
+									console.log("Data of id: " + id + "was reviewed");
 								});
 							}
 							
@@ -311,14 +313,13 @@ defined('BASEPATH') or exit('No direct script access allowed');
 							if (trashBtn !== null)
 							{
 								trashBtn.addEventListener('click', event => {
-								console.log("Trash Btn clicked ")
+									var id = trashBtn.dataset.id;
+									console.log("Data of id: " + id + "was trashed");
 								});
 							}
 							
 						}
-						else {
-							console.log("not class")
-						}
+
 					}
 				});
 			});
