@@ -54,6 +54,7 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = false;
 $route['thanks'] = 'home/thanks';
 $route['dashboard/index'] = 'dashboard';
+$route['request/delete/(:num)'] = 'request/delete/$1';
 $route['auth/reset_password']           = 'auth/reset_password';
 $route['auth/reset_password/(.+)'] = 'auth/reset_password/$1';
 $route['auth/forgot_password'] = 'auth/forgot_password';
