@@ -127,7 +127,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 												<th>Status</th>
 												<th>Video</th>
 												<th>Actions</th>
-												<th>Record ID</th>
+												
 											</tr>
 										</thead>
 										<tbody>
@@ -142,7 +142,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 												<td><?php echo $request["approval_status"] ?></td>
 												<td><?php echo $request["review_status"] ?></td>
 												<td nowrap></td>
-												<td class="never"><?php echo $request["id"] ?></td>
+												
 											</tr>
 										<?php
 } ?>
