@@ -113,8 +113,11 @@ var KTDatatablesAdvancedColumnRendering = function() {
                             '<span class="kt-font-bold kt-font-' + status[data].state + '">' + status[data].title + '</span>';
                     },
                 },
+                { "visible": false, "targets": [3] },
             ],
+
         });
+
     };
 
     return {
