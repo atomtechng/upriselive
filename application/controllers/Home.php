@@ -20,14 +20,11 @@ class Home extends CI_Controller
 
     public function request()
     {
-        var_dump("I am here");
-    
+          
         $name = $this->input->post('name');
         $email = $this->input->post('email');
         $phonenumber = $this->input->post('phonenumber');
         $link = $this->input->post('link');
-
-        
 
         $data = array("name" => $name,
             "email" => $email,
@@ -38,11 +35,8 @@ class Home extends CI_Controller
         $this->request_model->create($data);
 
         $Subject ="Welcome to Upriselive!!!";
-
         $alt_body ="You are about to experince a breakthrough in your career";
-
         $message= "You are about to experince a breakthrough in your career";
-
         $this->mail($email, "Upriselive", $name, $message, $Subject, $alt_body);
 
         redirect('thanks');
