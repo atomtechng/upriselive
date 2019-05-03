@@ -279,7 +279,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
 						// element added to DOM
 						var element ;
 						var hasClass = [].some.call(mutation.addedNodes, function(el) {
-							var classDiscovered  = el.classList.contains('dropdown-menu');
+							if(el){
+								var classDiscovered  = el.classList.contains('dropdown-menu');
+							}
+							else 
+								classDiscovered = FALSE;
 							if(classDiscovered)
 							{
 								element = el;
