@@ -298,7 +298,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 							{
 								approvalBtn.addEventListener('click', event => {
 									var id = approvalBtn.dataset.id;
-									fetch("<?php echo base_url('request/update/') ?>" + id + "status/" + 1, {
+									fetch("<?php echo base_url('request/update/') ?>" + id + "/status/" + 1, {
 										method: 'put'})
 										.then(function(response) {
 											return response.json();
@@ -315,7 +315,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 							{
 								reviewBtn.addEventListener('click', event => {
 									var id = reviewBtn.dataset.id;
-									fetch("<?php echo base_url('request/update/') ?>" + id + "status/" + 4, {
+									fetch("<?php echo base_url('request/update/') ?>" + id + "/status/" + 4, {
 										method: 'put'})
 										.then(function(response) {
 											return response.json();
