@@ -8,6 +8,9 @@ var KTDatatablesAdvancedColumnRendering = function() {
         return table.DataTable({
             responsive: true,
             paging: true,
+            order: [
+                [0, 'desc']
+            ],
             columnDefs: [{
                     targets: 0,
                     title: 'Artist',
