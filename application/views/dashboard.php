@@ -304,7 +304,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 											return response.json();
 										})
 										.then(function(myJson) {
-											console.log(JSON.stringify(myJson));
+											location.reload();
 										});
 									console.log("Data of id: " + id + "was approved");
 
@@ -321,7 +321,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 											return response.json();
 										})
 										.then(function(myJson) {
-											console.log(JSON.stringify(myJson));
+											location.reload();
 										});
 									console.log("Data of id: " + id + "was reviewed");
 								});
@@ -337,7 +337,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 											return response.json();
 										})
 										.then(function(myJson) {
-											console.log(JSON.stringify(myJson));
+											location.reload();
 										});
 								});
 							}
