@@ -5,7 +5,7 @@ var KTDatatablesAdvancedColumnRendering = function() {
         var table = $('#kt_table_1');
 
         // begin first table
-        table.DataTable({
+        return table.DataTable({
             responsive: true,
             paging: true,
             columnDefs: [{
@@ -124,11 +124,11 @@ var KTDatatablesAdvancedColumnRendering = function() {
 
         //main function to initiate the module
         init: function() {
-            initTable1();
+            return initTable1();
         }
     };
 }();
 
 jQuery(document).ready(function() {
-    KTDatatablesAdvancedColumnRendering.init();
+    var datatable = KTDatatablesAdvancedColumnRendering.init();
 });
