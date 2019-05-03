@@ -5,7 +5,7 @@
             <header class="header-holder">             
                 <div class="menu-wrapper center-relative relative">             
                     <div class="header-logo">
-                        <a href="#home"><img src="<?php echo base_url(). 'public/images/logo.png' ?>" alt="Upriselive"></a>               
+                        <a href="<?php echo base_url(). '#home' ?>"><img src="<?php echo base_url(). 'public/images/logo.png' ?>" alt="Upriselive"></a>               
                     </div>
                     <div class="toggle-holder">
                         <div id="toggle">
@@ -17,9 +17,9 @@
                     <div class="menu-holder">
                         <nav id="header-main-menu">
                             <ul class="main-menu sm sm-clean">
-                                <li><a href="#home">Home</a></li>
-                                <li><a href="#services">How it Works</a></li>
-                                <li><a href="#enroll">Enroll Now</a></li>
+                                <li><a href="<?php echo base_url(). '#home' ?>">Home</a></li>
+                                <li><a href="<?php echo base_url(). '#services' ?>">How it Works</a></li>
+                                <li><a href="<?php echo base_url(). '#enroll' ?>">Enroll Now</a></li>
                             </ul>
                         </nav>                       
                     </div>
