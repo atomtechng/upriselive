@@ -281,7 +281,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 						var element ;
 						var hasClass = [].some.call(mutation.addedNodes, function(el) {
 
-							var classDiscovered  = el.classList.contains('btn-approve');
+							
+							var classDiscovered  = el.classList.contains('dropdown-menu');
 							if(classDiscovered)
 							{
 								element = el;
