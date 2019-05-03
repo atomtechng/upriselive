@@ -33,4 +33,21 @@ class Request_model extends CI_Model
     {
         return $this->db->delete(TABLE_REQUESTS, array('id' => $id)); 
     }
+
+    public function update_approval_status($id, $status_id)
+    {
+
+        $data = [ 'approval_status' => $status_id];
+        $this->db->where('id', $id);
+        $this->db->update('requests', $data);
+        return ($this->db->affected_rows() > 0) ? TRUE : FALSE; 
+    }
+
+    public function update_review_status($id, $status_id)
+    {
+        $data = [ 'review_status' => $status_id];
+        $this->db->where('id', $id);
+        $this->db->update('requests', $data);
+        return ($this->db->affected_rows() > 0) ? TRUE : FALSE; 
+    }
 }

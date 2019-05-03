@@ -76,30 +76,6 @@ var KTDatatablesAdvancedColumnRendering = function() {
                                 <a class="dropdown-item btn-approve" id="btn-approve" href="#" data-id="` + full[0] + `"><i class="la la-edit"></i> Approve</a>
                                 <a class="dropdown-item btn-review" id="btn-review" href="#" data-id="` + full[0] + `"><i class="la la-leaf"></i> Review</a>
                                 <a class="dropdown-item btn-trash" id="btn-trash" href="#" data-id="` + full[0] + `"><i class="la la-print"></i> Trash</a>
-                                <script>
-			
-                                $("#btn-approve").click(function(event){
-                                    event.preventDefault();
-                                    var id = $(this).data(id);
-                                    console.log("Approval Log clicked " + id);
-                                        
-                                    });
-
-                                    $("#btn-review").click(function(event){
-                                    event.preventDefault();
-                                    var id = $(this).data(id);
-                                    console.log("Review Log clicked " + id);
-                                        
-                                    });
-
-                                    $("#btn-trash").click(function(event){
-                                    event.preventDefault();
-                                    var id = $(this).data(id);
-                                    console.log("Trash Log clicked " + id);
-                                        
-                                    });
-
-                                </script>
                             </div>
                         </span>
                         <a href="#" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="View">

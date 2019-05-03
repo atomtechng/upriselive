@@ -35,6 +35,42 @@ class Request extends CI_Controller
         redirect('thanks');
     }
 
+    public function update_approval_status($id=-1, $status_id=-1)
+    {
+        $request_method = strtolower($this->input->server('REQUEST_METHOD'));
+        $result = array();
+        if($request_method == "put")
+        {
+            if ($id != -1 && $status_id != -1) {
+                
+                if ($this->request_model->update_approval_status($id, $status_id) == true) {
+                    $result["status"] ="success";
+                    $result["message"] = "Data with id ". $id. " was updated";
+                } else {
+                    $result["status"] ="fail";
+                    $result["message"] = "Data with id ". $id. " couldn't be updated";
+                }
+                $this->output
+                ->set_content_type('application/json')
+                ->set_output(json_encode($result));
+            }
+            else{
+                $result["status"] ="fail";
+                $result["message"] = "No id specified";
+                $this->output
+                ->set_content_type('application/json')
+                ->set_output(json_encode($result));
+            }
+        }
+        else{
+            $result["status"] ="fail";
+            $result["message"] = "unauthorized Access";
+            $this->output
+            ->set_content_type('application/json')
+            ->set_output(json_encode(array("status" => "unauthorized")));
+        }
+    }
+
     public function delete($id=-1)
     {
         

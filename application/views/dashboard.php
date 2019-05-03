@@ -298,8 +298,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 							{
 								approvalBtn.addEventListener('click', event => {
 									var id = approvalBtn.dataset.id;
-									fetch("<?php echo base_url('request/delete/') ?>" + id, {
-										method: 'delete'})
+									fetch("<?php echo base_url('request/update/') ?>" + id + "status/" + 1, {
+										method: 'put'})
 										.then(function(response) {
 											return response.json();
 										})
@@ -315,6 +315,14 @@ defined('BASEPATH') or exit('No direct script access allowed');
 							{
 								reviewBtn.addEventListener('click', event => {
 									var id = reviewBtn.dataset.id;
+									fetch("<?php echo base_url('request/update/') ?>" + id + "status/" + 4, {
+										method: 'put'})
+										.then(function(response) {
+											return response.json();
+										})
+										.then(function(myJson) {
+											console.log(JSON.stringify(myJson));
+										});
 									console.log("Data of id: " + id + "was reviewed");
 								});
 							}
@@ -323,7 +331,14 @@ defined('BASEPATH') or exit('No direct script access allowed');
 							{
 								trashBtn.addEventListener('click', event => {
 									var id = trashBtn.dataset.id;
-									console.log("Data of id: " + id + "was trashed");
+									fetch("<?php echo base_url('request/delete/') ?>" + id, {
+										method: 'delete'})
+										.then(function(response) {
+											return response.json();
+										})
+										.then(function(myJson) {
+											console.log(JSON.stringify(myJson));
+										});
 								});
 							}
 						}
