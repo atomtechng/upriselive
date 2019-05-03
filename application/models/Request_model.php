@@ -28,4 +28,9 @@ class Request_model extends CI_Model
     {
         return $this->db->insert(TABLE_REQUESTS, $data);
     }
+
+    public function delete($id)
+    {
+        return $this->db->delete(TABLE_REQUESTS, array('id' => $id)); 
+    }
 }

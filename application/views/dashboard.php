@@ -275,13 +275,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 			var observer = new MutationObserver(function(mutations) {
 				mutations.forEach(function(mutation) {
-					console.log(mutation)
 					if (mutation.addedNodes && mutation.addedNodes.length > 0) {
 						// element added to DOM
 						var element ;
 						var hasClass = [].some.call(mutation.addedNodes, function(el) {
-
-							
 							var classDiscovered  = el.classList.contains('dropdown-menu');
 							if(classDiscovered)
 							{
@@ -296,10 +293,17 @@ defined('BASEPATH') or exit('No direct script access allowed');
 							{
 								approvalBtn.addEventListener('click', event => {
 									var id = approvalBtn.dataset.id;
+									fetch("<?php echo base_url() ?>" +"request/delete/" + id')
+									.then(function(response) {
+										return response.json();
+									})
+									.then(function(myJson) {
+										console.log(JSON.stringify(myJson));
+									});
 									console.log("Data of id: " + id + "was approved");
+
 								});
 							}
-
 							var reviewBtn = element.querySelector("a#btn-review");
 							if (reviewBtn !== null)
 							{
@@ -308,7 +312,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
 									console.log("Data of id: " + id + "was reviewed");
 								});
 							}
-							
 							var trashBtn = element.querySelector("a#btn-trash");
 							if (trashBtn !== null)
 							{
@@ -317,9 +320,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 									console.log("Data of id: " + id + "was trashed");
 								});
 							}
-							
 						}
-
 					}
 				});
 			});
