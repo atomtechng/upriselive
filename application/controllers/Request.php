@@ -35,7 +35,7 @@ class Request extends CI_Controller
         redirect('thanks');
     }
 
-    public function delete($id)
+    public function delete($id=-1)
     {
         
         $request_method = $this->input->server('REQUEST_METHOD');
@@ -43,7 +43,7 @@ class Request extends CI_Controller
         if($request_method == "delete")
         {
             
-            if (isset($id) && !empty($id)) {
+            if ($id != -1) {
                 
                 if ($this->request_model->delete($id) == true) {
                     $result["status"] ="success";
