@@ -273,21 +273,21 @@ defined('BASEPATH') or exit('No direct script access allowed');
 		<script src="<?php echo base_url() . 'admin/assets/js/demo1/pages/crud/datatables/advanced/column-rendering.js' ?>" type="text/javascript"></script>
 		<script>
 			
-		$("#btn-approve").on('click', function(event){
+		$("#btn-approve").click(function(event){
 			event.preventDefault();
 			var id = $(this).data(id);
 			console.log("Approval Log clicked " + id);
 				
 			});
 
-			$("#btn-review").on('click', function(event){
+			$("#btn-review").click(function(event){
 			event.preventDefault();
 			var id = $(this).data(id);
 			console.log("Review Log clicked " + id);
 				
 			});
 
-			$("#btn-trash").on('click', function(event){
+			$("#btn-trash").click(function(event){
 			event.preventDefault();
 			var id = $(this).data(id);
 			console.log("Trash Log clicked " + id);
