@@ -136,6 +136,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 												<td><?php echo $request["link"] ?></td>
 												<td><?php echo $request["name"] ?></td>
 												<td><?php echo $request["email"] ?></td>
+												<td><?php echo $request["phonenumber"] ?></td>
 												<td><?php echo $request["approval_status"] ?></td>
 												<td><?php echo $request["review_status"] ?></td>
 												<td nowrap></td>
