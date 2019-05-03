@@ -39,6 +39,8 @@ class Request extends CI_Controller
     {
         
         $request_method = $this->input->server('REQUEST_METHOD');
+        var_dump($request_method);
+        exit;
         $result = array();
         if($request_method == "delete")
         {
