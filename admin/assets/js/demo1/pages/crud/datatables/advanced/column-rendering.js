@@ -208,15 +208,12 @@ var KTDatatablesAdvancedColumnRendering = function() {
                     targets: 0,
                     title: 'Artist',
                     render: function(data, type, full, meta) {
-                        var number = KTUtil.getRandomInt(1, 14);
-                        var user_img = '100_' + number + '.jpg';
 
-                        var output;
-                        if (number > 8) {
-                            var gravataURL = get_gravatar(full[3], 100);
-                            output = `
+                        var gravataURL = get_gravatar(full[3], 100);
+                        output = `
                                 <div class="kt-user-card-v2">
                                     <div class="kt-user-card-v2__pic">
+                                        <div class="kt-badge kt-badge--xl kt-badge--` + state + `"><span>` + full[2].substring(0, 1) + `</div>
                                         <img src="` + gravataURL + `" class="kt-img-rounded kt-marginless" alt="photo">
                                     </div>
                                     <div class="kt-user-card-v2__details">
@@ -224,31 +221,6 @@ var KTDatatablesAdvancedColumnRendering = function() {
                                         <a href="#" class="kt-user-card-v2__email kt-link">` + full[3] + `</a>
                                     </div>
                                 </div>`;
-                        } else {
-                            var stateNo = KTUtil.getRandomInt(0, 7);
-                            var states = [
-                                'success',
-                                'brand',
-                                'danger',
-                                'accent',
-                                'warning',
-                                'metal',
-                                'primary',
-                                'info'
-                            ];
-                            var state = states[stateNo];
-
-                            output = `
-                                <div class="kt-user-card-v2">
-                                    <div class="kt-user-card-v2__pic">
-                                        <div class="kt-badge kt-badge--xl kt-badge--` + state + `"><span>` + full[2].substring(0, 1) + `</div>
-                                    </div>
-                                    <div class="kt-user-card-v2__details">
-                                        <span class="kt-user-card-v2__name">` + full[2] + `</span>
-                                        <a href="#" class="kt-user-card-v2__email kt-link">` + full[3] + `</a>
-                                    </div>
-                                </div>`;
-                        }
 
                         return output;
                     },
