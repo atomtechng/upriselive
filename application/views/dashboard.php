@@ -294,12 +294,26 @@ defined('BASEPATH') or exit('No direct script access allowed');
 							var approvalBtn = element.querySelector("a#btn-approve");
 							if (approvalBtn !== null)
 							{
-								console.log("Btn Approved Seen ");
+								approvalBtn.addEventListener('click', event => {
+								console.log("Approval Btn clicked ")
+								});
 							}
-							element.addEventListener('click', event => {
-								console.log("Approval Log clicked ")
-							});
-							console.log('element ".btn-approve" added');
+							
+							var reviewBtn = element.querySelector("a#btn-review");
+							if (reviewBtn !== null)
+							{
+								reviewBtn.addEventListener('click', event => {
+								console.log("Review Btn clicked ")
+								});
+							}
+							
+							var trashBtn = element.querySelector("a#btn-trash");
+							if (trashBtn !== null)
+							{
+								trashBtn.addEventListener('click', event => {
+								console.log("Trash Btn clicked ")
+								});
+							}
 							
 						}
 						else {
