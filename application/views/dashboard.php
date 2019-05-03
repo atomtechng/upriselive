@@ -121,7 +121,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 											<tr>
 												<th>Record ID</th>
 												<th>Song Link</th>
-												<th>City/State</th>
+												<th class="never">Name</th>
 												<th class="never">Email Address</th>
 												<th>Phone Number</th>
 												<th>City/State</th>
@@ -137,7 +137,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 											<tr>
 												<td><?php echo $request["id"] ?></td>
 												<td><?php echo $request["link"] ?></td>
-												<td><?php echo $request["name"] ?></td>
+												<td class="never"><?php echo $request["name"] ?></td>
 												<td class="never"><?php echo $request["email"] ?></td>
 												<td><?php echo $request["phonenumber"] ?></td>
 												<td><?php echo $request["location"] ?></td>

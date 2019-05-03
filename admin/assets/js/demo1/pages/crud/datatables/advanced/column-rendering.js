@@ -133,39 +133,39 @@ jQuery(document).ready(function() {
     var dataTables = KTDatatablesAdvancedColumnRendering.init();
     var filterAllStatus = jQuery("#filter-all-status");
     filterAllStatus.on('click', function() {
-        dataTables.columns(4).search("").draw();
+        dataTables.columns(6).search("").draw();
     });
     var filterPendingStatus = jQuery("#filter-pending-status");
     filterPendingStatus.on('click', function() {
-        dataTables.columns(4).search("New").draw();
-        // dataTable.columns(4).search("Rejected|Done", true, false, true).draw();
+        dataTables.columns(6).search("New").draw();
+        // dataTable.columns(6).search("Rejected|Done", true, false, true).draw();
     });
     var filterApprovedStatus = jQuery("#filter-approved-status");
     filterApprovedStatus.on('click', function() {
-        dataTables.columns(4).search("Approved").draw();
+        dataTables.columns(6).search("Approved").draw();
     });
     var filterTrashedStatus = jQuery("#filter-trashed-status");
     filterTrashedStatus.on('click', function() {
-        dataTables.columns(4).search("Trashed").draw();
+        dataTables.columns(6).search("Trashed").draw();
     });
 
     var filterAllProcess = jQuery("#filter-all-process");
     filterAllProcess.on('click', function() {
-        dataTables.columns(5).search("").draw();
+        dataTables.columns(7).search("").draw();
     });
     var filterDoneProcess = jQuery("#filter-done-process");
     filterDoneProcess.on('click', function() {
-        dataTables.columns(5).search("Done").draw();
+        dataTables.columns(7).search("Done").draw();
     });
     var filterProgessProcess = jQuery("#filter-progress-process");
     filterProgessProcess.on('click', function() {
-        dataTables.columns(5).search("In Progress").draw();
+        dataTables.columns(7).search("In Progress").draw();
         // dataTable.columns(4).search("Rejected|Done", true, false, true).draw();
     });
 
     var filterWaitingProcess = jQuery("#filter-waiting-process");
     filterWaitingProcess.on('click', function() {
-        dataTables.columns(5).search("Waiting List").draw();
+        dataTables.columns(7).search("Waiting List").draw();
     });
 
 
