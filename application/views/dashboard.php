@@ -102,6 +102,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
 								<li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link " id="filter-done-process"><i class="kt-menu__link-icon flaticon2-laptop"></i><span class="kt-menu__link-text">Done</span></a></li>
 								<li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link " id="filter-progress-process"><i class="kt-menu__link-icon flaticon2-browser-2"></i><span class="kt-menu__link-text">In Progress</span></a></li>
 								<li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link " id="filter-waiting-process"><i class="kt-menu__link-icon flaticon2-open-text-book"></i><span class="kt-menu__link-text">Waiting List</span></a></li>
+								<li class="kt-menu__section ">
+									<h4 class="kt-menu__section-text"><a href="<?php echo base_url('auth/logout') ?>" class="kt-menu__link ">Logout</a></h4>
+									<i class="kt-menu__section-icon flaticon-more-v2"></i>
+								</li>
 							</ul>
 						</div>
 					</div>

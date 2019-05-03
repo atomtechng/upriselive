@@ -96,7 +96,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 										<input class="form-control" type="password" placeholder="Password" name="password" autocomplete="off">
 									</div>
 									<div class="kt-login-v2__actions">
-										<a href="#" class="kt-link kt-link--brand">
+										<a href="<?php echo base_url('auth/forgot_password')?>" class="kt-link kt-link--brand">
 											Forgot Password ?
 										</a>
 										<button type="submit" class="btn btn-brand btn-elevate btn-pill">Sign In</button>
@@ -105,7 +105,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                 <?php echo form_close();?>
 								<div class="kt-separator kt-separator--space-lg  kt-separator--border-solid"></div>
 
-								<h3 class="kt-login-v2__desc">Or sign with social account</h3>
+								<!-- <h3 class="kt-login-v2__desc">Or sign with social account</h3>
 								<div class="kt-login-v2__options">
 									<a href="#" class="btn btn-facebook btn-pill">
 										<i class="fab fa-facebook-f"></i>
@@ -119,7 +119,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 										<i class="fab fa-google"></i>
 										Google
 									</a>
-								</div>
+								</div> -->
 							</div>
 						</div>
 						<div class="kt-login-v2__image">
