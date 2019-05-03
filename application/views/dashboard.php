@@ -90,18 +90,18 @@ defined('BASEPATH') or exit('No direct script access allowed');
 									<h4 class="kt-menu__section-text">Filter by</h4>
 									<i class="kt-menu__section-icon flaticon-more-v2"></i>
 								</li>
-								<li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon flaticon2-graphic"></i><span class="kt-menu__link-text">All</span></a></li>
-								<li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon flaticon2-graph-1"></i><span class="kt-menu__link-text">Pending</span></a></li>
-								<li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon flaticon2-rocket-2"></i><span class="kt-menu__link-text">Approved</span></a></li>
-								<li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon flaticon2-attention"></i><span class="kt-menu__link-text">Trashed</span></a></li>
+								<li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link " id="filter-all-status"><i class="kt-menu__link-icon flaticon2-graphic"></i><span class="kt-menu__link-text">All</span></a></li>
+								<li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link " id="filter-pending-status"><i class="kt-menu__link-icon flaticon2-graph-1"></i><span class="kt-menu__link-text">Pending</span></a></li>
+								<li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link " id="filter-approved-status"><i class="kt-menu__link-icon flaticon2-rocket-2"></i><span class="kt-menu__link-text">Approved</span></a></li>
+								<li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link " id="filter-trashed-status"><i class="kt-menu__link-icon flaticon2-attention"></i><span class="kt-menu__link-text">Trashed</span></a></li>
 								<li class="kt-menu__section ">
 									<h4 class="kt-menu__section-text">Video Progress</h4>
 									<i class="kt-menu__section-icon flaticon-more-v2"></i>
 								</li>
-								<li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon flaticon2-graphic"></i><span class="kt-menu__link-text">All</span></a></li>
-								<li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon flaticon2-laptop"></i><span class="kt-menu__link-text">Done</span></a></li>
-								<li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon flaticon2-browser-2"></i><span class="kt-menu__link-text">In Progress</span></a></li>
-								<li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon flaticon2-open-text-book"></i><span class="kt-menu__link-text">Waiting List</span></a></li>
+								<li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link " id="filter-all-process"><i class="kt-menu__link-icon flaticon2-graphic"></i><span class="kt-menu__link-text">All</span></a></li>
+								<li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link " id="filter-done-process"><i class="kt-menu__link-icon flaticon2-laptop"></i><span class="kt-menu__link-text">Done</span></a></li>
+								<li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link " id="filter-progress-process"><i class="kt-menu__link-icon flaticon2-browser-2"></i><span class="kt-menu__link-text">In Progress</span></a></li>
+								<li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link " id="filter-waiting-process"><i class="kt-menu__link-icon flaticon2-open-text-book"></i><span class="kt-menu__link-text">Waiting List</span></a></li>
 							</ul>
 						</div>
 					</div>
@@ -353,28 +353,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
 			};
 
 			observer.observe(document.body, config);
-			
-		$("#btn-approve").click(function(event){
-			event.preventDefault();
-			var id = $(this).data(id);
-			console.log("Approval Log clicked " + id);
-				
-			});
-
-			$("#btn-review").click(function(event){
-			event.preventDefault();
-			var id = $(this).data(id);
-			console.log("Review Log clicked " + id);
-				
-			});
-
-			$("#btn-trash").click(function(event){
-			event.preventDefault();
-			var id = $(this).data(id);
-			console.log("Trash Log clicked " + id);
-				
-			});
-
 		</script>
 	</body>
 </html>
