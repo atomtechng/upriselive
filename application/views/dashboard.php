@@ -272,6 +272,30 @@ defined('BASEPATH') or exit('No direct script access allowed');
 		<script src="<?php echo base_url() . 'admin/assets/vendors/custom/datatables/datatables.bundle.js' ?>" type="text/javascript"></script>
 		<script src="<?php echo base_url() . 'admin/assets/js/demo1/pages/crud/datatables/advanced/column-rendering.js' ?>" type="text/javascript"></script>
 		<script>
+
+			var observer = new MutationObserver(function(mutations) {
+				mutations.forEach(function(mutation) {
+					console.log(mutation)
+					if (mutation.addedNodes && mutation.addedNodes.length > 0) {
+						// element added to DOM
+						var hasClass = [].some.call(mutation.addedNodes, function(el) {
+							return el.classList.contains('dropdown-menu')
+						});
+						if (hasClass) {
+							// element has class `MyClass`
+							console.log('element ".dropdown-menu" added');
+						}
+					}
+				});
+			});
+
+			var config = {
+				attributes: true,
+				childList: true,
+				characterData: true
+			};
+
+			observer.observe(document.body, config);
 			
 		$("#btn-approve").click(function(event){
 			event.preventDefault();
