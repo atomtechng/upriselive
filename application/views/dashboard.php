@@ -297,6 +297,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
 							console.log('element ".btn-approve" added');
 							
 						}
+						else {
+							console.log("not class")
+						}
 					}
 				});
 			});
