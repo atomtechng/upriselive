@@ -293,7 +293,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 							{
 								approvalBtn.addEventListener('click', event => {
 									var id = approvalBtn.dataset.id;
-									fetch("<?php echo base_url() ?>" +"request/delete/" + id')
+									fetch("<?php echo base_url('request/delete/') ?>" + id)
 									.then(function(response) {
 										return response.json();
 									})
