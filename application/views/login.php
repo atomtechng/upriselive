@@ -52,7 +52,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 		<link href="<?php echo base_url(). 'admin/assets/css/demo1/skins/header/menu/light.css' ?>" rel="stylesheet" type="text/css" />
 		<link href="<?php echo base_url(). 'admin/assets/css/demo1/skins/brand/navy.css' ?>" rel="stylesheet" type="text/css" />
 		<link href="<?php echo base_url(). 'admin/assets/css/demo1/skins/aside/navy.css' ?>" rel="stylesheet" type="text/css" />
-		<link href="mad.css" rel="stylesheet" type="text/css" />
+		<link href="<?php echo base_url(). 'admin/mad.css' ?>" rel="stylesheet" type="text/css" />
 		<link rel="shortcut icon" href="<?php echo base_url(). 'admin/images/favicon.png' ?>" />
 	</head>
 
