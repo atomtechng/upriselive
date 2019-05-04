@@ -34,7 +34,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 		<link href="<?php echo base_url(). 'admin/assets/vendors/general/bootstrap-select/dist/css/bootstrap-select.css' ?>" rel="stylesheet" type="text/css" />
 		<link href="<?php echo base_url(). 'admin/assets/vendors/general/nouislider/distribute/nouislider.css' ?>" rel="stylesheet" type="text/css" />
 		<link href="<?php echo base_url(). 'admin/assets/vendors/general/owl.carousel/dist/assets/owl.carousel.css' ?>" rel="stylesheet" type="text/css" />
-		<link href="<?php echo base_url(). 'admin/assets/vendors/general/owl.carousel/dist/assets/owl.theme.default.css' ?>' ?>" rel="stylesheet" type="text/css" />
+		<link href="<?php echo base_url(). 'admin/assets/vendors/general/owl.carousel/dist/assets/owl.theme.default.css' ?>" rel="stylesheet" type="text/css" />
 		<link href="<?php echo base_url(). 'admin/assets/vendors/general/dropzone/dist/dropzone.css' ?>" rel="stylesheet" type="text/css" />
 		<link href="<?php echo base_url(). 'admin/assets/vendors/general/summernote/dist/summernote.css' ?>" rel="stylesheet" type="text/css" />
 		<link href="<?php echo base_url(). 'admin/assets/vendors/general/bootstrap-markdown/css/bootstrap-markdown.min.css' ?>" rel="stylesheet" type="text/css" />
